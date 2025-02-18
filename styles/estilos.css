@@ -5,6 +5,7 @@
 }
 body{
     background-color: black;
+    justify-content: center;
  }
 /* Barra de navegación fija en la parte superior */
 .navbar-container {
@@ -95,7 +96,6 @@ h2{
     border-radius: 10px;
     margin-right: 15px;
 }
-
 .btn:hover {
   background: linear-gradient(45deg, #412852, #513c5f); /* Degradado en el hover */
   transform: scale(1.1); /* Agranda el botón ligeramente */
