@@ -54,6 +54,13 @@ body{
     height: 1055px;
 }
 h1{
+  font-family: "Russo One", serif;
+  font-weight: 500; /* Negrita */
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  }
+h2{
     font-family: "Russo One", serif;
     font-weight: 400; /* Negrita */
     font-style: normal;
@@ -71,14 +78,6 @@ h1{
     font-weight: 400;
     font-style: normal;
   }
-.cajaTexto h2{
-    font-family: "Russo One", serif;
-    font-weight: 100; /* Negrita */
-    font-size: 30px;
-    text-align: center;
-    color: white;
-
-    }
  .cajaTexto p{ 
     font-family: "Triodion", serif;
     font-weight: 400;
@@ -95,4 +94,9 @@ h1{
     float: left;
     border-radius: 10px;
     margin-right: 15px;
+}
+
+.btn:hover {
+  background: linear-gradient(45deg, #412852, #513c5f); /* Degradado en el hover */
+  transform: scale(1.1); /* Agranda el botón ligeramente */
 }
