@@ -52,7 +52,7 @@ body{
     background-color: rgb(0, 0, 0);
 }
 .cajaAsideUno{
-    height: 1055px;
+    height: 880px;
 }
 h1{
   font-family: "Russo One", serif;
@@ -82,7 +82,7 @@ h2{
  .cajaTexto p{ 
     font-family: "Triodion", serif;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     color: white;
 }
@@ -99,4 +99,93 @@ h2{
 .btn:hover {
   background: linear-gradient(45deg, #412852, #513c5f); /* Degradado en el hover */
   transform: scale(1.1); /* Agranda el botón ligeramente */
+}
+/* Contenedor principal del carrusel */
+.carousel-container {
+  width: 80%; /* Ancho del carrusel */
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden; /* Oculta el contenido fuera del carrusel */
+  padding: 20px 0;
+  background-color: #151b4db0; /* Fondo gris claro */
+  border-radius: 10px; /* Bordes redondeados */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px; /* Ajusta la altura del contenedor */
+}
+
+/* Carrusel - Contenedor de las imágenes */
+.carousel {
+  display: flex;
+  align-items: flex-start; /* Alinea las imágenes al inicio (arriba) */
+}
+
+/* Contenedor de cada imagen */
+.image-container {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  text-align: center;
+  opacity: 0; /* Comienza invisible */
+  animation: fall 1s ease forwards; /* Aplicar la animación */
+}
+
+/* Animación de caída */
+@keyframes fall {
+  0% {
+    transform: translateY(-50px); /* Comienza por encima de la posición original */
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0); /* Termina en su lugar original */
+    opacity: 1; /* Se hace visible */
+  }
+}
+
+/* Añadir un retraso de tiempo para cada imagen, para que caigan de una en una */
+.image-container:nth-child(1) {
+  animation-delay: 0s; /* No hay retraso para la primera imagen */
+}
+
+.image-container:nth-child(2) {
+  animation-delay: 0.3s; /* Retraso de 0.3 segundos para la segunda imagen */
+}
+
+.image-container:nth-child(3) {
+  animation-delay: 0.6s; /* Retraso de 0.6 segundos para la tercera imagen */
+}
+
+.image-container:nth-child(4) {
+  animation-delay: 0.9s; /* Retraso de 0.9 segundos para la cuarta imagen */
+}
+
+.image-container:nth-child(5) {
+  animation-delay: 1.2s; /* Retraso de 1.2 segundos para la quinta imagen */
+}
+
+.image-container:nth-child(6) {
+  animation-delay: 1.5s; /* Retraso de 1.5 segundos para la sexta imagen */
+}
+
+.image-container:nth-child(7) {
+  animation-delay: 1.8s; /* Retraso de 1.8 segundos para la séptima imagen */
+}
+
+.image-container:nth-child(8) {
+  animation-delay: 2.1s; /* Retraso de 2.1 segundos para la octava imagen */
+}
+
+/* Para los porcentajes debajo del logo */
+.percentage {
+  position: absolute;
+  bottom: -20px; /* Mueve el porcentaje abajo, ajusta el valor según necesites */
+  left: 50%;
+  transform: translateX(-50%); /* Centrado horizontalmente */
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco translúcido para el porcentaje */
+  padding: 5px 10px;
+  border-radius: 5px;
 }
