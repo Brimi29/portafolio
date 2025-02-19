@@ -189,3 +189,138 @@ h2{
   padding: 5px 10px;
   border-radius: 5px;
 }
+/* Secciones */
+section {
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #2c3e50;
+  font-size: 1.8rem;
+}
+
+/* Lista con estilo */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  background-color: #ecf0f1;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 1.1rem;
+}
+
+/* Estilos para la sección de Arte */
+.art {
+  background-color: #ecf0f1;
+}
+
+/* Estilos para la sección de Cine */
+.cinema {
+  background-color: #e3e3e3;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #2c3e50;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    margin: 10px;
+    padding: 15px;
+  }
+}
+/* Sección de Proyecto */
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-content {
+  flex: 1 1 60%;
+}
+
+.project-image {
+  flex: 1 1 30%;
+}
+
+.project-image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.project h2 {
+  font-size: 2rem;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.project-link {
+  text-decoration: none;
+  background-color: #5f4176;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #34495e;
+}
+
+/* Estilos para el footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #34495e;
+  color: #fff;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+  .project {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-content, .project-image {
+    flex: 1 1 100%;
+  }
+
+  .project-link {
+    width: 100%;
+  }
+}
